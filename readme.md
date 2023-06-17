@@ -1,16 +1,16 @@
 ## Sentiment Analysis API
-This is an inference engine that exposes an API endpoint which can be used to classify/analyze different sentiments from raw texts.
+This is an inference engine that exposes API endpoints which can be used to classify/analyze different sentiments from raw texts.
 
 #### How to start
 First of all, make sure all the dependencies are installed. To do that,
 make a `virtual environment` by executing the following command `python -m venv venv`
 Now to switch into the environment,
 if you're using windows then execute the command `.\venv\Scripts\activate`
-or if you're on linux, then try `source venv/bin/activate`.
+or if you're on linux or using git bash, then try `source venv/bin/activate`.
 
 After doing this, run `pip install -r requirements.txt`. With this command all the required dependencies will be installed. Be patient, it will take some time though.
 
-**Using the app**
+**Using the app:**
 To use the application in the local machine run `python app.py`.
 Then you can click on the link shown in the terminal to access the application with the url in the browser. You can now check the app with applications like `curl` or you can go with modern gui applications like `postman`.
 
@@ -38,3 +38,10 @@ we needed some external python modules which I have used extensively in this pro
 #### Implementation Details
 First of all, we need the model to work as required. For that, I have managed a dataset that include all the needed labels such as `positive`, `negative` and `neutral`. As soon as I have found a suitable dataset I went to `Google Colab` to perform EDA and data preprocessing. With the help of `huggingface` `datasets` library I organized the data accordingly and initiated training. After training, as the moment I got the trained model, I hoped on the VS Code on my local machine and implemented the backend application.
 You can check the `resource` directory above to have a look on how the training is done.
+
+#### Additional Notes( Please Read Carefully )
+* Make sure you have all the necessary dependencies.
+* Make sure you are on virtual environment while doing both spinning up the server and testing the endpoints.
+
+#### Unable to use it?
+Please file an issue above. Will try to resolve as quickly as possible.
