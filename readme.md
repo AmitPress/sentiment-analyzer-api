@@ -17,7 +17,7 @@ Then you can click on the link shown in the terminal to access the application w
 You can play with the app using the `/docs` endpoint. There you can test the app on the fly.
 
 Now again, to have a wholistic view of the project you can run `pytest tests` on the root directory of the project and again if you want to check the backend application and the API endpoint just run `pytest tests/test_routes.py` and to check the model inference in itself run `pytest tests/test_model.py`.
-![Demonstration](/screenshots/demo.png)
+![Demonstration](/screenshots/demonstration.png)
 #### Technology Stack
 This whole app is built with the following packages:
 - [SetFit](https://github.com/huggingface/setfit)
